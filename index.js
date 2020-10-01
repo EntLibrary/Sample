@@ -4,7 +4,9 @@
 
 // EntLib namespace automatically added by EntLib.d.ts
 
-const extension = new EntLib.Extension({
+const { Extension, Block } = EntLib
+
+const extension = new Extension({
     displayName: '확장블록',
     blocks: {
         logToConsole: new Block({
