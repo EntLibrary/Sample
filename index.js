@@ -2,30 +2,7 @@
 
 /// <reference types="./EntLib" />
 
-/*
-    ES6 Import example
-*/
-
-import { Block, Extension } from 'EntLib'
-
-const extension = new Extension({
-    displayName: '확장블록',
-    blocks: {
-        logToConsole: new Block({
-            template: '[콘솔에 (text: Hello world!) 출력하기]',
-            action({ text }) {
-                console.log(text)
-            }
-        })
-    }
-})
-
-extension.enable()
-Extension.allExtensionsLoaded()
-
-/*
-    Use automatically added namespace
-*/
+// EntLib namespace automatically added by EntLib.d.ts
 
 const extension = new EntLib.Extension({
     displayName: '확장블록',
